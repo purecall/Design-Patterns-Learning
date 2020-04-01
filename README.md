@@ -1,2 +1,2 @@
 # Golang-Design-Patterns
-学习设计模式并用Golang代码实现
+学习设计模式，并使用Golang Python等语言实现
