@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 // 里氏替换原则：所有引用基类的地方必须能透明地使用其子类的对象
+
 type Sized interface {
 	GetWidth() int
 	SetWidth(width int)
@@ -14,7 +15,7 @@ type Rectangle struct {
 	width, height int
 }
 
-//     vvv !! POINTER
+// USE POINTER !!!
 func (r *Rectangle) GetWidth() int {
 	return r.width
 }
