@@ -19,7 +19,7 @@
 
      完全遵循"**开放-关闭原则**"，**可扩展**
 
-   - **factory generator**：用于生成特定角色的工厂，两种方式：functional approach和structural approach
+   - **factory generator**：用于**生成特定角色的工厂**，两种方式：functional approach和structural approach
 
    -  
 
