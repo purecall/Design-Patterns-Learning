@@ -9,6 +9,10 @@
 
 1. **Builder （建造者模式，生成器模式）**
 
+   - builder_facets
+   - builder_parameter
+   - functional_builder
+
 2. **Factories**
 
    - **interface factory 工厂方法模式**
@@ -21,7 +25,7 @@
 
    - **factory generator**：用于**生成特定角色的工厂**，两种方式：functional approach和structural approach
 
-   -  
+   -  **prototype_factory**，每个预定义类型都用一个常量表示
 
 3. Prototype 原型模式（克隆，Clone）
 
