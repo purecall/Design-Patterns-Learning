@@ -29,6 +29,9 @@
 
 3. Prototype 原型模式（克隆，Clone）
 
+   - **prototype serialization**
+   - **prototype factory**
+
 4. Singleton 单例模式
 
 
