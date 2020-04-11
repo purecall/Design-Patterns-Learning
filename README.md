@@ -1,5 +1,5 @@
 # Golang-Design-Patterns
-学习设计模式，并使用Golang Python等语言实现
+学习设计模式，并使用Golang等语言实现
 
 
 
@@ -27,12 +27,31 @@
 
    -  **prototype_factory**，每个预定义类型都用一个常量表示
 
-3. Prototype 原型模式（克隆，Clone）
+3. **Prototype 原型模式（克隆，Clone）**
 
    - **prototype serialization**
    - **prototype factory**
 
-4. Singleton 单例模式
+4. **Singleton 单例模式**
+
+   使用场景
+
+   - It makes sense to **have one in the system**: Database repository，Object factory
+   - **The construction call is expensive**
+     - We only do it once
+     - We give everyone the same instance
+   - Want to prevent anyone creating additional copies
+   - Need to take care of **lazy instantiation**
+
+   
+
+   具体代码 **singleton.go**：
+
+   其中再次提到了**DIP(Dependence Inversion Principle)**，测试单例数据库实例，比如当时两个数据1和2，不应该ok := GetInstance().GetCityPopulation() == (1+2)，因为1和2其实是magic number，任何时候数据库都可能被修改。这样的测试语句，其实是**在测试数据库的读取**，**而非在测试获取人口的函数GetCityPopulation()**
+
+   改进方法：DIP，抽象出一个接口，创建类DummyDatabase，用这个类来测试GetCityPopulation()函数，**无需依赖高层模块**
+
+5. 
 
 
 
