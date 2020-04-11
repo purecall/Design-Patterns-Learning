@@ -13,7 +13,7 @@
    - builder_parameter
    - functional_builder
 
-2. **Factories**
+2. **Factories**（抽象工厂好像go的interface{}已经是很自然的设计了，不再赘述）
 
    - **interface factory 工厂方法模式**
 
@@ -50,8 +50,6 @@
    其中再次提到了**DIP(Dependence Inversion Principle)**，测试单例数据库实例，比如当时两个数据1和2，不应该ok := GetInstance().GetCityPopulation() == (1+2)，因为1和2其实是magic number，任何时候数据库都可能被修改。这样的测试语句，其实是**在测试数据库的读取**，**而非在测试获取人口的函数GetCityPopulation()**
 
    改进方法：DIP，抽象出一个接口，创建类DummyDatabase，用这个类来测试GetCityPopulation()函数，**无需依赖高层模块**
-
-5. 
 
 
 
